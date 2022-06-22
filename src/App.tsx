@@ -41,8 +41,8 @@ function App() {
 
   return (
    <ul>
-     {data.lessons.map( (lesson: Lesson) => {
-       return <li>{lesson.title}</li>
+     {data?.lessons.map( (lesson: Lesson) => {
+       return <li key={lesson.id}>{lesson.title}</li>
      })}
     </ul>
   )
